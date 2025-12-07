@@ -1,0 +1,83 @@
+:root {
+  --gov-primary: #0b3d91;
+  --gov-secondary: #f4f6fa;
+  --gov-accent: #b22234;
+  --gov-border: #c7c7c7;
+  --gov-text: #1a1a1a;
+  --gov-radius: 10px;
+  --gov-font: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* MAIN DASHBOARD WRAPPER */
+.dashboard {
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding: 20px;
+  background: var(--gov-secondary);
+  position: relative;
+  box-sizing: border-box;
+  font-family: var(--gov-font);
+}
+
+/* TOP RIGHT CONTROL BAR */
+.dashboard-controls {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: flex;
+  gap: 10px;
+
+  background: white;
+  padding: 10px 14px;
+  border-radius: var(--gov-radius);
+
+  /* subtle shadow */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* BUTTON STYLING */
+.control-btn {
+  padding: 8px 16px;
+  background: var(--gov-primary);
+  color: white;
+  border: none;
+  border-radius: var(--gov-radius);
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.control-btn:hover {
+  background: #072c6a;
+}
+
+.secondary-btn {
+  background: var(--gov-accent);
+}
+
+.secondary-btn:hover {
+  background: #8c1b27;
+}
+
+/* DISPLAY CONTAINER (BORDERLESS) */
+.dashboard-display {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--gov-radius);
+
+  /* removed border */
+  border: black 20px;
+
+  background: white;
+  overflow: hidden;
+
+  /* bigger soft shadow for premium look */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* IFRAME (NO BORDER) */
+.qlik-iframe {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+}

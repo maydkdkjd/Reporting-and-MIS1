@@ -1,0 +1,54 @@
+:root {     /* Dark Government Navy */
+  --gov-control-bg: #f1f3f5;   /* Clean soft grey */
+  --gov-control-hover: #e2e6ea;
+  --gov-control-text: #1a1a1a;
+  --gov-border: #b6bec8;
+  --gov-radius: 8px;
+  --gov-font: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* NAVBAR */
+.gov-navbar {
+  width: 100%;
+  background: #808080;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--gov-font);
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ALIGN ACTIONS */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* DROPDOWNS + BUTTONS UNIFIED STYLE */
+.gov-control {
+  padding: 8px 14px;
+  border-radius: var(--gov-radius);
+  font-size: 14px;
+  border: 1px solid var(--gov-border);
+  background: var(--gov-control-bg);
+  color: var(--gov-control-text);
+  cursor: pointer;
+  min-width: 180px;
+  font-weight: 500;
+  height: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+/* HOVER */
+.gov-control:hover {
+  background: var(--gov-control-hover);
+}
+
+/* BUTTONS SAME LOOK */
+.gov-btn {
+  background: var(--gov-control-bg);
+  color: var(--gov-control-text);
+}
